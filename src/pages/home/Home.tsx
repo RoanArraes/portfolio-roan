@@ -2,10 +2,16 @@ import {
   Container
 } from './styles';
 
-export default function Home() {
+import {
+  MenuCircle,
+} from '../../components';
+
+const Home = () => {
   return(
     <Container>
-      Home
+      <MenuCircle />
     </Container>
   )
 }
+
+export default Home;
