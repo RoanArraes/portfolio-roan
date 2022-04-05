@@ -14,7 +14,7 @@ export const ButtonBack = styled.button`
   border: 1px solid transparent;
   font-family: ${({ theme }) => theme.fonts[0]};
   color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.fontSizes.medium1};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
   text-transform: uppercase;
   cursor: pointer;
 
@@ -24,10 +24,21 @@ export const ButtonBack = styled.button`
 
 `;
 export const TitlePage = styled.span`
-  font-size: ${({ theme }) => theme.fontSizes.big};
+  font-size: ${({ theme }) => theme.fontSizes.extreme};
   font-family: ${({ theme }) => theme.fonts[0]};
   color: ${({ theme }) => theme.colors.white};
+  text-shadow: 0px 1px 5px ${({ theme }) => theme.colors.hover};
   cursor: default;
+
+  @media screen and (max-width: 760px){
+    font-size: ${({ theme }) => theme.fontSizes.big};
+  }
+  @media screen and (max-width: 520px){
+    font-size: ${({ theme }) => theme.fontSizes.medium4};
+  }
+  @media screen and (max-width: 380px){
+    font-size: ${({ theme }) => theme.fontSizes.medium3};
+  }
 `;
 
 export const WrapperTitle = styled(ItemWrapper)`
