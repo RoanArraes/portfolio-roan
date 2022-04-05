@@ -7,7 +7,11 @@ import {
   WrapperButton
 } from './styles';
 
-const HeaderWithBack = () => {
+type Props = {
+  title?: string
+}
+
+const HeaderWithBack = ({ title }: Props) => {
   return(
     <Container>
       <WrapperButton>
@@ -17,7 +21,7 @@ const HeaderWithBack = () => {
       </WrapperButton>
       <WrapperTitle>
         <TitlePage>
-          {LABEL_HEADER_ABOUT_PAGE.title}
+          {title}
         </TitlePage>
       </WrapperTitle>
     </Container>
