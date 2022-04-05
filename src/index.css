@@ -5,6 +5,13 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "K2dBold";
+  src: local("K2dBold"),
+  url("./fonts/K2D/K2D-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
