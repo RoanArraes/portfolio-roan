@@ -13,6 +13,10 @@ export const LABEL_HEADER_ABOUT_PAGE: LabelHeader = {
   title: "SOBRE"
 }
 
+export const LABEL_HEADER_PROJECTS_PAGE: LabelHeader = {
+  title: "PROJETOS"
+}
+
 export const LABEL_BUTTON_BACK = {
   label: "Voltar"
 }
