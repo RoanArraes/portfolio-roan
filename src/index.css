@@ -6,10 +6,9 @@
 }
 
 @font-face {
-  font-family: "K2dBold";
-  src: local("K2dBold"),
-  url("./fonts/K2D/K2D-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "K2dRegular";
+  src: local("K2dRegular"),
+  url("./fonts/K2D/K2D-Regular.ttf") format("truetype");
 }
 
 body {
