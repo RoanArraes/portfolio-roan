@@ -79,6 +79,7 @@ const CardProject = ({
               label={LABEL_LINK_SOURCE_CODE.label}
               url={repositoryUrl}
               targetUrl='__blank'
+              useExternalLink
             />
           </WrapperLinks>
         }
