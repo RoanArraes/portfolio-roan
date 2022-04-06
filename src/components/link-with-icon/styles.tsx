@@ -14,11 +14,13 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  box-sizing: border-box;
   transform: rotate(${({ rotation }) => rotation ? rotation+'deg' : 0});
   margin: ${({ margin }) => margin && margin};
 
   a {
     text-decoration:none;
+    white-space: nowrap;
   }
 `;
 
