@@ -57,7 +57,9 @@ const CardProject = ({
       <ImageArea
         className='card-project__image-area'
       >
-        <Image />
+        <Image 
+          src={`https://github.com/RoanArraes/${name}/blob/main/src/assets/images/project-image.jpg?raw=true`}
+        />
       </ImageArea>
       <WrapperBottom
         className='card-project__wrapper-bottom-area'

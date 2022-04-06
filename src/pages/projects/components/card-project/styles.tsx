@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import ItemWrapper from "../../../../helpers/ItemWrapper";
 
+type Props = {
+  src: string
+}
+
 export const Container = styled.div`
   width: 300px;
   height: 300px;
@@ -47,18 +51,21 @@ export const Container = styled.div`
 `;
 
 export const ImageArea = styled.div`
-  width: 250px;
+  width: 100%;
   height: 0px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   transition: height 500ms;
 `;
 
-export const Image = styled.span`
+export const Image = styled.img<Props>`
   width: 100%;
   height: 100%;
+  //object-fit: contain;
   border-radius: 10px;
-  background-color: aliceblue;
+  opacity: 0.9;
 `;
 
 export const WrapperBottom = styled(ItemWrapper)`

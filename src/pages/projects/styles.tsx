@@ -29,3 +29,9 @@ export const Wrapper = styled(ItemWrapper)`
   margin: 20px;
   box-sizing: border-box;
 `;
+
+export const Message = styled.span`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: ${({ theme }) => theme.fontSizes.medium1};
+  font-family: ${({ theme }) => theme.fonts[1]};
+`;
