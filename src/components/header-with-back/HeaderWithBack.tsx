@@ -16,10 +16,8 @@ const HeaderWithBack = ({ title }: Props) => {
   return(
     <Container>
       <WrapperButton>
-        <ButtonBack>
-          <NavLink to={'/'}>
-            {LABEL_BUTTON_BACK.label}
-          </NavLink>
+        <ButtonBack to={'/'}>
+          {LABEL_BUTTON_BACK.label}
         </ButtonBack>
       </WrapperButton>
       <WrapperTitle>
