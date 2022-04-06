@@ -28,6 +28,7 @@ const MenuCircle = () => {
           icon={LABEL_MENU_OPTIONS[0].icon}
           targetUrl={LABEL_MENU_OPTIONS[0].targetUrl}
           margin="0 40px 0 0"
+          useRouter
         />
       </Wrapper>
       <WrapperCenter>
@@ -39,6 +40,7 @@ const MenuCircle = () => {
           targetUrl={LABEL_MENU_OPTIONS[1].targetUrl}
           margin="0 0 100px 0"
           rotation="-90"
+          useExternalLink
         />
         <ExternalCircle
           className="wrapper-top-bottom__external-circle"
@@ -53,6 +55,7 @@ const MenuCircle = () => {
           targetUrl={LABEL_MENU_OPTIONS[2].targetUrl}
           margin="100px 0 0 0"
           rotation="90"
+          useRouter
         />
         <WrapperMenuVertical
           className="wrapper-top-bottom__wrapper-menu-vertical"
@@ -64,6 +67,7 @@ const MenuCircle = () => {
           targetUrl={LABEL_MENU_OPTIONS[3].targetUrl}
           icon={LABEL_MENU_OPTIONS[3].icon}
           margin="0 0 5px 0"
+          useExternalLink
         />
         <LinkWithIcon
           className="wrapper__label-link"
@@ -71,6 +75,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[0].url}
           targetUrl={LABEL_MENU_OPTIONS[0].targetUrl}
           margin="0 0 5px 0"
+          useRouter
         />
         <LinkWithIcon
           className="wrapper__label-link"
@@ -78,6 +83,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[1].url}
           targetUrl={LABEL_MENU_OPTIONS[1].targetUrl}
           margin="0 0 5px 0"
+          useExternalLink
         />
         <LinkWithIcon
           className="wrapper__label-link"
@@ -85,6 +91,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[2].url}
           targetUrl={LABEL_MENU_OPTIONS[2].targetUrl}
           margin="0 0 5px 0"
+          useRouter
         />
         </WrapperMenuVertical>
       </WrapperCenter>
@@ -98,6 +105,7 @@ const MenuCircle = () => {
           icon={LABEL_MENU_OPTIONS[3].icon}
           targetUrl={LABEL_MENU_OPTIONS[3].targetUrl}
           margin="0 0 0 40px"
+          useExternalLink
         />
       </Wrapper>
     </MenuArea>
