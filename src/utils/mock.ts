@@ -126,7 +126,7 @@ export const PROJECTS_MOCK = [
 			"site_admin": false
 		},
 		"html_url": "https://github.com/RoanArraes/crypto-balance-app",
-		"description": "*EM DESENVOLVIMENTO* Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas.",
+		"description": "*EM DESENVOLVIMENTO* Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas, Plataforma para ajuda no gerenciamento e balanceamento das criptomoedas.",
 		"fork": false,
 		"url": "https://api.github.com/repos/RoanArraes/crypto-balance-app",
 		"forks_url": "https://api.github.com/repos/RoanArraes/crypto-balance-app/forks",
