@@ -57,7 +57,9 @@ const CardProject = ({
       <ImageArea
         className='card-project__image-area'
       >
-        <Image />
+        <Image 
+          src={`https://github.com/RoanArraes/${name}/blob/main/src/assets/images/project-image.jpg?raw=true`}
+        />
       </ImageArea>
       <WrapperBottom
         className='card-project__wrapper-bottom-area'
@@ -79,6 +81,7 @@ const CardProject = ({
               label={LABEL_LINK_SOURCE_CODE.label}
               url={repositoryUrl}
               targetUrl='__blank'
+              useExternalLink
             />
           </WrapperLinks>
         }

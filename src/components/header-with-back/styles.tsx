@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import ItemWrapper from "../../helpers/ItemWrapper";
 
@@ -6,22 +7,25 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
-export const ButtonBack = styled.span`
-  height: 20px;
+export const ButtonBack = styled(NavLink)`
+  padding: 10px 20px;
   align-self: flex-start;
+  display: flex;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.rgba.white010};
+  border-radius: 10px;
+  text-decoration:none;
+  font-family: ${({ theme }) => theme.fonts[0]};
+  font-size: ${({ theme }) => theme.fontSizes.medium2};
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
 
-  a{
-    color: ${({ theme }) => theme.colors.white};
-    font-family: ${({ theme }) => theme.fonts[0]};
-    font-size: ${({ theme }) => theme.fontSizes.medium};
-    text-decoration:none;
-    text-transform: uppercase;
-    cursor: pointer;
-    
-    :hover {
-      color: ${({ theme }) => theme.colors.hover};
-    }
+  :hover {
+    border: 1px solid ${({ theme }) => theme.colors.hover};
+    color: ${({ theme }) => theme.colors.hover};
   }
+
 `;
 export const TitlePage = styled.span`
   font-size: ${({ theme }) => theme.fontSizes.medium4};

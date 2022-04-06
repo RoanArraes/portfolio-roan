@@ -18,7 +18,7 @@ export const LABEL_HEADER_PROJECTS_PAGE: LabelHeader = {
 }
 
 export const LABEL_BUTTON_BACK = {
-  label: "HOME"
+  label: "⇦"
 }
 
 export const LABEL_LINK_SOURCE_CODE = {
