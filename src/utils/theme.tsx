@@ -5,6 +5,7 @@ const Theme = {
     background: "#0B030F",
     hover: "#9D1FFF",
     menuCircle: "#27CBFF",
+    buttonClose: "#DB3127",
     rgba: {
       white005: "rgba(255, 255, 255, 0.05)",
       white010: "rgba(255, 255, 255, 0.10)",
