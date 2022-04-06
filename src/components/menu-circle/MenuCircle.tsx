@@ -27,7 +27,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[0].url}
           icon={LABEL_MENU_OPTIONS[0].icon}
           targetUrl={LABEL_MENU_OPTIONS[0].targetUrl}
-          margin="0 20px 0 0"
+          margin="0 40px 0 0"
         />
       </Wrapper>
       <WrapperCenter>
@@ -37,7 +37,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[1].url}
           icon={LABEL_MENU_OPTIONS[1].icon}
           targetUrl={LABEL_MENU_OPTIONS[1].targetUrl}
-          margin="0 0 80px 0"
+          margin="0 0 100px 0"
           rotation="-90"
         />
         <ExternalCircle
@@ -51,7 +51,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[2].url}
           icon={LABEL_MENU_OPTIONS[2].icon}
           targetUrl={LABEL_MENU_OPTIONS[2].targetUrl}
-          margin="80px 0 0 0"
+          margin="100px 0 0 0"
           rotation="90"
         />
         <WrapperMenuVertical
@@ -97,7 +97,7 @@ const MenuCircle = () => {
           url={LABEL_MENU_OPTIONS[3].url}
           icon={LABEL_MENU_OPTIONS[3].icon}
           targetUrl={LABEL_MENU_OPTIONS[3].targetUrl}
-          margin="0 0 0 20px"
+          margin="0 0 0 40px"
         />
       </Wrapper>
     </MenuArea>

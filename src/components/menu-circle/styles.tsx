@@ -8,7 +8,7 @@ export const MenuArea = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 540px){
+  @media screen and (max-width: 620px){
     .menu-circle__wrapper-label-left {
       display: none;
     }
@@ -39,16 +39,15 @@ export const MenuArea = styled.div`
 
   .wrapper__label-link {
     a {
-      font-size: ${({ theme }) => theme.fontSizes.medium};
-      cursor: pointer;
-      text-shadow: 1px 1px ${({ theme }) => theme.colors.black};
+      font-size: ${({ theme }) => theme.fontSizes.small};
       transition: color 100ms linear;
       color: ${({ theme }) => theme.colors.white};
       font-family: ${({ theme }) => theme.fonts[0]};
+      cursor: pointer;
 
       :hover {
         transition: color 100ms linear;
-        color: ${({ theme }) => theme.colors.hover};
+        color: ${({ theme }) => theme.colors.hoverMenuCircle};
       }
     }
   }
@@ -57,13 +56,13 @@ export const MenuArea = styled.div`
 export const ExternalCircle = styled(ItemWrapper)`
   width: 200px;
   height: 200px;
-  background-color: transparent;
   border: 10px solid ${({ theme }) => theme.colors.menuCircle};
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  box-sizing: border-box;
   box-shadow: 
     10px -10px 30px ${({ theme }) => theme.colors.rgba.white010},
     10px 10px 30px ${({ theme }) => theme.colors.rgba.white010},
@@ -78,12 +77,6 @@ export const ExternalCircle = styled(ItemWrapper)`
     align-items: center;
     justify-content: center;
     opacity: 0.85;
-    box-shadow: 
-      10px -10px 30px ${({ theme }) => theme.colors.rgba.black010},
-      10px 10px 30px ${({ theme }) => theme.colors.rgba.black010},
-      -10px 10px 30px ${({ theme }) => theme.colors.rgba.black010},
-      -10px -10px 30px ${({ theme }) => theme.colors.rgba.black010}
-    ;
   }
 `;
 
