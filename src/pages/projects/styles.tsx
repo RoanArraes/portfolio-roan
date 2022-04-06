@@ -10,12 +10,21 @@ export const Container = styled.div`
   overflow: auto;
   background-color: ${({ theme }) => theme.colors.background};
   box-sizing: border-box;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.hover};
+  }
 `;
 
 export const Wrapper = styled(ItemWrapper)`
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
   box-sizing: border-box;
