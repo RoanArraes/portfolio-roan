@@ -31,7 +31,7 @@ export const Wrapper = styled(ItemWrapper)`
 
 export const TextArea = styled.span`
   max-width: 600px;
-  font-size: ${({ theme }) => theme.fontSizes.medium2};
+  font-size: ${({ theme }) => theme.fontSizes.medium1};
   font-family: ${({ theme }) => theme.fonts[1]};
   color: ${({ theme }) => theme.colors.white};
   text-indent: 20px;
