@@ -8,6 +8,7 @@ import {
   HeaderWithBack
 } from '../../components';
 import { DATA_ABOUT } from '../../utils/mock';
+import { LABEL_HEADER_ABOUT_PAGE } from '../../utils/labels';
 
 const About = () => {
 
@@ -25,7 +26,9 @@ const About = () => {
 
   return(
     <Container>
-      <HeaderWithBack />
+      <HeaderWithBack
+        title={LABEL_HEADER_ABOUT_PAGE.title}
+      />
       <Wrapper>
         {breakTextString(DATA_ABOUT)}
       </Wrapper>

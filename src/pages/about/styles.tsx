@@ -6,10 +6,12 @@ export const Container = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const Wrapper = styled(ItemWrapper)`
-  width: 100%;
+  max-width: 600px;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -17,12 +19,20 @@ export const Wrapper = styled(ItemWrapper)`
   align-items: center;
   box-sizing: border-box;
   overflow: auto;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.hover};
+  }
 `;
 
 export const TextArea = styled.span`
   max-width: 600px;
   font-size: ${({ theme }) => theme.fontSizes.medium2};
-  font-family: ${({ theme }) => theme.fonts[0]};
+  font-family: ${({ theme }) => theme.fonts[1]};
   color: ${({ theme }) => theme.colors.white};
   text-indent: 20px;
   text-align: justify;
