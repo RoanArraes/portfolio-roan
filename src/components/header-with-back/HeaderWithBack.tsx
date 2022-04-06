@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { LABEL_BUTTON_BACK, LABEL_HEADER_ABOUT_PAGE } from '../../utils/labels';
 import {
   Container,
@@ -16,7 +17,9 @@ const HeaderWithBack = ({ title }: Props) => {
     <Container>
       <WrapperButton>
         <ButtonBack>
-          {LABEL_BUTTON_BACK.label}
+          <NavLink to={'/'}>
+            {LABEL_BUTTON_BACK.label}
+          </NavLink>
         </ButtonBack>
       </WrapperButton>
       <WrapperTitle>
