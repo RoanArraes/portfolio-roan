@@ -24,18 +24,12 @@ export const ButtonBack = styled.button`
 
 `;
 export const TitlePage = styled.span`
-  font-size: ${({ theme }) => theme.fontSizes.extreme};
+  font-size: ${({ theme }) => theme.fontSizes.medium4};
   font-family: ${({ theme }) => theme.fonts[0]};
   color: ${({ theme }) => theme.colors.white};
   text-shadow: 0px 1px 5px ${({ theme }) => theme.colors.hover};
   cursor: default;
 
-  @media screen and (max-width: 760px){
-    font-size: ${({ theme }) => theme.fontSizes.big};
-  }
-  @media screen and (max-width: 520px){
-    font-size: ${({ theme }) => theme.fontSizes.medium4};
-  }
   @media screen and (max-width: 380px){
     font-size: ${({ theme }) => theme.fontSizes.medium3};
   }
