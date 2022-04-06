@@ -41,7 +41,7 @@ const CardProject = ({
   }
 
   const  adjustDescriptionToRender = (description: string): string => {
-    const splitString = description.split('* ');
+    const splitString = description.split('* -');
 
     if (!splitString[1] || splitString[1] === "") {
       return "Nenhuma descrição.";
@@ -50,15 +50,23 @@ const CardProject = ({
     return splitString[1];
   }
 
+  const removeImageWithError = (name: string) => {
+    const element = document.getElementById(`${name}-image`);
+    element && element.remove();
+  }
+
   return(
     <Container
       onClick={onClick}
     >
       <ImageArea
+        id={`${name}-image`}
         className='card-project__image-area'
       >
         <Image 
           src={`https://github.com/RoanArraes/${name}/blob/main/src/assets/images/project-image.jpg?raw=true`}
+          onError={() => removeImageWithError(name)}
+          
         />
       </ImageArea>
       <WrapperBottom
