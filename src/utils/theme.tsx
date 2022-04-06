@@ -2,8 +2,9 @@ const Theme = {
   colors: {
     white: "#FFFF",
     black: "#000",
-    background: "#0B030F",
+    background: "#141414",
     hover: "#9D1FFF",
+    hoverMenuCircle:"#27CBFF",
     menuCircle: "#27CBFF",
     buttonClose: "#DB3127",
     rgba: {
@@ -15,7 +16,7 @@ const Theme = {
   },
   fonts: ["JuraBold", "K2dRegular"],
   fontSizes: {
-    small: '0.32em',
+    small: '0.22em',
     medium: '1em',
     medium1: '1.25em',
     medium2: '1.75em',
