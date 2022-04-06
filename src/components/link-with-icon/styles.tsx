@@ -19,7 +19,7 @@ export const Container = styled.div<ContainerProps>`
   margin: ${({ margin }) => margin && margin};
 
   a {
-    text-decoration:none;
+    text-decoration: none;
     white-space: nowrap;
   }
 `;

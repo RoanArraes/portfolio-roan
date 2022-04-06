@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   Container,
   Icon
@@ -11,12 +12,16 @@ type Props = {
   className?: string
   rotation?: string,
   margin?: string
+  useRouter?: boolean
+  useExternalLink?: boolean
 }
 
 const LinkWithIcon = ({ 
   icon,
   label,
   url,
+  useRouter,
+  useExternalLink,
   targetUrl,
   className,
   rotation,
@@ -33,13 +38,20 @@ const LinkWithIcon = ({
           img={icon}
         />
       }
-      {(url && label) && 
+      {(url && label && useExternalLink && !useRouter) && 
         <a 
           href={url}
           target={targetUrl}
         >
           {label}
         </a>
+      }
+      {(url && label && useRouter && !useExternalLink) && 
+        <Link
+          to={url}
+        >
+          {label}
+        </Link>
       }
     </Container>
   );
