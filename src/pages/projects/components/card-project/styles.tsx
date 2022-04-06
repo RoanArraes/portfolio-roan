@@ -2,38 +2,39 @@ import styled from "styled-components";
 import ItemWrapper from "../../../../helpers/ItemWrapper";
 
 type Props = {
-  src: string
+  src: string,
+  //onError: boolean
 }
 
 export const Container = styled.div`
-  width: 300px;
+  width: 280px;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 20px 10px;
   margin: 10px;
   background-color: ${({ theme }) => theme.colors.rgba.white005};
   box-sizing: border-box;
   border-radius: 10px;
+  overflow: hidden;
   box-shadow: 
     1px -1px 10px ${({ theme }) => theme.colors.rgba.white005},
     1px 1px 10px ${({ theme }) => theme.colors.rgba.white005},
     -1px 1px 10px ${({ theme }) => theme.colors.rgba.white005},
     -1px -1px 10px ${({ theme }) => theme.colors.rgba.white005}
   ;
-  transition: border 600ms, height 500ms;
+  transition: border 700ms, height 500ms;
   cursor: default;
 
   :hover {
-    transition: border 600ms, height 500ms;
+    transition: border 700ms, height 500ms;
     border: 1px solid ${({ theme }) => theme.colors.hover};
     height: 600px;
 
     .card-project__wrapper-bottom-area {
-      height: 500px;
+      height: 100%;
     }
 
     .card-project__text-area {
@@ -56,26 +57,30 @@ export const ImageArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   transition: height 500ms;
+  box-shadow: 
+    1px -1px 10px ${({ theme }) => theme.colors.rgba.black010},
+    1px 1px 10px ${({ theme }) => theme.colors.rgba.black010},
+    -1px 1px 10px ${({ theme }) => theme.colors.rgba.black010},
+    -1px -1px 10px ${({ theme }) => theme.colors.rgba.black010}
+  ;
 `;
 
 export const Image = styled.img<Props>`
   width: 100%;
   height: 100%;
-  //object-fit: contain;
-  border-radius: 10px;
+  object-fit: cover;
   opacity: 0.9;
 `;
 
 export const WrapperBottom = styled(ItemWrapper)`
-  height: 250px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 20px;
   box-sizing: border-box;
+  padding: 10px;
 `;
 
 export const Label = styled.span`
@@ -87,6 +92,7 @@ export const Label = styled.span`
 `;
 
 export const TextArea = styled.div`
+  width: 260px;
   max-height: 100px;
   text-align: center;
   font-family: ${({ theme }) => theme.fonts[1]};

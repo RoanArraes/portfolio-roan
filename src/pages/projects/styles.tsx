@@ -26,7 +26,6 @@ export const Wrapper = styled(ItemWrapper)`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px;
   box-sizing: border-box;
 `;
 
