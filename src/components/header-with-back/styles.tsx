@@ -23,6 +23,12 @@ export const ButtonBack = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
 
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   :hover {
     border: 1px solid ${({ theme }) => theme.colors.hover};
     color: ${({ theme }) => theme.colors.hover};
