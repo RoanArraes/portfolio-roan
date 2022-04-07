@@ -1,4 +1,5 @@
 import { LABEL_BUTTON_BACK } from '../../utils/labels';
+import { ROUTES } from '../../utils/routes';
 import {
   Container,
   ButtonBack,
@@ -15,7 +16,7 @@ const HeaderWithBack = ({ title }: Props) => {
   return(
     <Container>
       <WrapperButton>
-        <ButtonBack to={'/portfolio-roan'}>
+        <ButtonBack to={ROUTES.HOME}>
           <span>{LABEL_BUTTON_BACK.label}</span>
         </ButtonBack>
       </WrapperButton>
