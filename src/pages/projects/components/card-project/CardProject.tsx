@@ -51,12 +51,15 @@ const CardProject = ({
   }
 
   const removeImageWithError = (name: string) => {
-    const element = document.getElementById(`${name}-image`);
-    element && element.remove();
+    const elementImage = document.getElementById(`${name}-image`);
+    elementImage && elementImage.remove();
+    const elementContainer = document.getElementById(`${name}-container`);
+    elementContainer && elementContainer.setAttribute("style","height: 300px");
   }
 
   return(
     <Container
+      id={`${name}-container`}
       onClick={onClick}
     >
       <ImageArea
@@ -91,11 +94,11 @@ const CardProject = ({
               targetUrl='__blank'
               useExternalLink
             />
+            <Status>
+              {isDoneStatus(description ? description : '') ? "Concluído" : "Em Desenvolvimento"}
+            </Status>
           </WrapperLinks>
         }
-        <Status>
-          {isDoneStatus(description ? description : '') ? "Concluído" : "Em Desenvolvimento"}
-        </Status>
       </WrapperBottom>
     </Container>
   );

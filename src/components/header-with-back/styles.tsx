@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
 export const ButtonBack = styled(NavLink)`
   width: 60px;
   height: 50px;
@@ -17,21 +18,26 @@ export const ButtonBack = styled(NavLink)`
   background-color: ${({ theme }) => theme.colors.rgba.white010};
   border-radius: 10px;
   text-decoration:none;
-  font-family: ${({ theme }) => theme.fonts[0]};
-  font-size: ${({ theme }) => theme.fontSizes.medium2};
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.white};
+  overflow: hidden;
+  box-sizing: border-box;
   cursor: pointer;
 
   span {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: ${({ theme }) => theme.fonts[0]};
+    font-size: ${({ theme }) => theme.fontSizes.medium2};
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.white};
   }
 
   :hover {
     border: 1px solid ${({ theme }) => theme.colors.hover};
-    color: ${({ theme }) => theme.colors.hover};
+    span {
+      color: ${({ theme }) => theme.colors.hover};
+    }
   }
 
 `;

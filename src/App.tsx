@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import './App.css';
 import Theme from './utils/theme'
 import { About, Home, Projects } from './pages';
+import { ROUTES } from './utils/routes';
 
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <div className="App">
       <ThemeProvider theme={Theme}>
         <Routes>
-          <Route path="/portfolio-roan" element={<Home />} />
-          <Route path="/portfolio-roan/sobre" element={<About />} />
-          <Route path="/portfolio-roan/projetos" element={<Projects />} />
+          <Route path={ROUTES.HOME} element={<Home />} />
+          <Route path={ROUTES.ABOUT} element={<About />} />
+          <Route path={ROUTES.PROJECTS} element={<Projects />} />
         </Routes>
         <Home />
       </ThemeProvider>
