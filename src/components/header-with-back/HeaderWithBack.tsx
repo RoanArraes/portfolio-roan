@@ -16,7 +16,7 @@ const HeaderWithBack = ({ title }: Props) => {
   return(
     <Container>
       <WrapperButton>
-        <ButtonBack to={'/'}>
+        <ButtonBack to={'/portfolio-roan'}>
           {LABEL_BUTTON_BACK.label}
         </ButtonBack>
       </WrapperButton>

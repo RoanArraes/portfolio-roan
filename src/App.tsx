@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <ThemeProvider theme={Theme}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<About />} />
-          <Route path="/projetos" element={<Projects />} />
+          <Route path="/portfolio-roan" element={<Home />} />
+          <Route path="/portfolio-roan/sobre" element={<About />} />
+          <Route path="/portfolio-roan/projetos" element={<Projects />} />
         </Routes>
         <Home />
       </ThemeProvider>
