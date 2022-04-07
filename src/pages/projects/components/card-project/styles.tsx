@@ -33,21 +33,14 @@ export const Container = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.hover};
     height: 600px;
 
-    .card-project__wrapper-bottom-area {
-      height: 100%;
-    }
-
     .card-project__text-area {
       transition: max-height 600ms;
-      max-height: 250px;
+      max-height: 200px;
     }
     .card-project__image-area {
-      transition: height 600ms;
-      height: 250px;
+      height: 300px;
     }
-    .card-project__links-area {
-      display: flex;
-    }
+
   }
 `;
 
@@ -58,6 +51,12 @@ export const ImageArea = styled.div`
   align-items: center;
   justify-content: center;
   transition: height 500ms;
+`;
+
+export const Image = styled.img<Props>`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   box-shadow: 
     1px -1px 10px ${({ theme }) => theme.colors.rgba.black010},
     1px 1px 10px ${({ theme }) => theme.colors.rgba.black010},
@@ -66,18 +65,12 @@ export const ImageArea = styled.div`
   ;
 `;
 
-export const Image = styled.img<Props>`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.9;
-`;
-
 export const WrapperBottom = styled(ItemWrapper)`
-  height: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
   box-sizing: border-box;
   padding: 10px;
@@ -100,8 +93,6 @@ export const TextArea = styled.div`
   color: ${({ theme }) => theme.colors.white};
   overflow: auto;
   box-sizing: border-box;
-  margin-bottom: auto;
-  margin-top: auto;
   transition: max-height 500ms;
 
   ::-webkit-scrollbar {
@@ -119,13 +110,21 @@ export const TextArea = styled.div`
 
 export const WrapperLinks = styled(ItemWrapper)`
   height: 50px;
-  display: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   padding: 5px;
   box-sizing: border-box;
 
   .card-project__link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 600ms;
+
     a {
       font-family: ${({ theme }) => theme.fonts[0]};
       color: ${({ theme }) => theme.colors.white};
@@ -141,9 +140,15 @@ export const WrapperLinks = styled(ItemWrapper)`
 `;
 
 export const Status = styled.span`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: ${({ theme }) => theme.fonts[0]};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   color: ${({ theme }) => theme.colors.white};
   word-break: keep-all;
   text-transform: uppercase;
+  margin-top: 10px;
+  //box-sizing: border-box;
 `;
