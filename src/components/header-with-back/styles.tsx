@@ -67,4 +67,5 @@ export const WrapperButton = styled(ItemWrapper)`
   display: flex;
   justify-content: flex-start;
   padding: 20px;
+  box-sizing: border-box;
 `;
