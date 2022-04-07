@@ -10,6 +10,7 @@ export const Container = styled.div`
   overflow: auto;
   background-color: ${({ theme }) => theme.colors.background};
   box-sizing: border-box;
+  padding-bottom: 20px;
 
   ::-webkit-scrollbar {
     width: 5px;

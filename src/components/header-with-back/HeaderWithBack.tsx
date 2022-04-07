@@ -1,5 +1,4 @@
-import { NavLink } from 'react-router-dom';
-import { LABEL_BUTTON_BACK, LABEL_HEADER_ABOUT_PAGE } from '../../utils/labels';
+import { LABEL_BUTTON_BACK } from '../../utils/labels';
 import {
   Container,
   ButtonBack,
