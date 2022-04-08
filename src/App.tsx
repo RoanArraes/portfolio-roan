@@ -15,7 +15,6 @@ function App() {
           <Route path={ROUTES.ABOUT} element={<About />} />
           <Route path={ROUTES.PROJECTS} element={<Projects />} />
         </Routes>
-        <Home />
       </ThemeProvider>
     </div>
   );

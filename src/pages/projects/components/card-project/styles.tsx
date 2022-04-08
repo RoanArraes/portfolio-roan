@@ -26,7 +26,7 @@ export const Container = styled.div`
     -1px -1px 10px ${({ theme }) => theme.colors.rgba.white005}
   ;
   transition: border 700ms, height 500ms;
-  cursor: default;
+  cursor: pointer;
 
   :hover {
     transition: border 700ms, height 500ms;
@@ -65,6 +65,14 @@ export const Image = styled.img<Props>`
   ;
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+`;
+
 export const WrapperBottom = styled(ItemWrapper)`
   height: 300px;
   display: flex;
@@ -72,8 +80,8 @@ export const WrapperBottom = styled(ItemWrapper)`
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  box-sizing: border-box;
   padding: 10px;
+  box-sizing: border-box;
 `;
 
 export const Label = styled.span`
@@ -108,37 +116,6 @@ export const TextArea = styled.div`
   }
 `;
 
-export const WrapperLinks = styled(ItemWrapper)`
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  padding: 5px;
-  box-sizing: border-box;
-
-  .card-project__link {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 600ms;
-
-    a {
-      font-family: ${({ theme }) => theme.fonts[0]};
-      color: ${({ theme }) => theme.colors.white};
-      font-size: ${({ theme }) => theme.fontSizes.medium};
-
-      :hover {
-        transition: color 200ms;
-        color: ${({ theme }) => theme.colors.hover};
-      }
-
-    }
-  }
-`;
-
 export const Status = styled.span`
   width: 100%;
   display: flex;
@@ -150,5 +127,23 @@ export const Status = styled.span`
   word-break: keep-all;
   text-transform: uppercase;
   margin-top: 10px;
-  //box-sizing: border-box;
+`;
+
+export const ButtonUrl = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 200ms;
+
+    span {
+      font-family: ${({ theme }) => theme.fonts[0]};
+      color: ${({ theme }) => theme.colors.white};
+      font-size: ${({ theme }) => theme.fontSizes.medium};
+
+      :hover {
+        transition: color 200ms;
+        color: ${({ theme }) => theme.colors.hover};
+      }
+    }
 `;

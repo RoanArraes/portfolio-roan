@@ -9,8 +9,8 @@ export const Container = styled.div`
   align-items: center;
   overflow: auto;
   background-color: ${({ theme }) => theme.colors.background};
+  padding-bottom: 50px;
   box-sizing: border-box;
-  margin-bottom: 20px;
 
   ::-webkit-scrollbar {
     width: 5px;
@@ -22,7 +22,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled(ItemWrapper)`
-  height: 100%;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;

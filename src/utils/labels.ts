@@ -22,6 +22,6 @@ export const LABEL_BUTTON_BACK = {
   label: "⇦"
 }
 
-export const LABEL_LINK_SOURCE_CODE = {
-  label: "CÓDIGO FONTE"
-}
+export const LABEL_LINK_SOURCE_CODE = "CÓDIGO FONTE";
+
+export const LABEL_LINK_SITE = "SITE";

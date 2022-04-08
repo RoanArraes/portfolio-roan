@@ -1,25 +1,22 @@
 import { LABEL_LINK_SOURCE_CODE } from '../../../../utils/labels';
 import {
   Container,
+  Wrapper,
   WrapperBottom,
-  WrapperLinks,
   TextArea,
   Label,
   Status,
   ImageArea,
-  Image
+  Image,
+  ButtonUrl
 } from './styles';
-
-import {
-  LinkWithIcon
-} from '../../../../components'
-
 
 type Props = {
   key: number,
   name: string,
-  description: string | null,
-  repositoryUrl?: string
+  description?: string,
+  repositoryUrl?: string,
+  homePage?: string
   onClick?: () => void;
 }
 
@@ -27,6 +24,7 @@ const CardProject = ({
   name,
   description,
   repositoryUrl,
+  homePage,
   onClick
 }: Props) => {
 
@@ -60,7 +58,7 @@ const CardProject = ({
   return(
     <Container
       id={`${name}-container`}
-      onClick={onClick}
+      onClick={() => window.open(`${homePage && homePage !== "" ? homePage : repositoryUrl}`, "_blank")}
     >
       <ImageArea
         id={`${name}-image`}
@@ -72,9 +70,7 @@ const CardProject = ({
           
         />
       </ImageArea>
-      <WrapperBottom
-        className='card-project__wrapper-bottom-area'
-      >
+      <WrapperBottom>
         <Label>
           {name}
         </Label>
@@ -83,22 +79,19 @@ const CardProject = ({
         >
           {description ? adjustDescriptionToRender(description) : 'Nenhuma descrição.'}
         </TextArea>
-        {repositoryUrl &&
-          <WrapperLinks
-            className='card-project__links-area'
-          >
-            <LinkWithIcon
+        <Wrapper>
+          {((homePage && homePage !== "") && repositoryUrl) &&
+            <ButtonUrl
               className='card-project__link'
-              label={LABEL_LINK_SOURCE_CODE.label}
-              url={repositoryUrl}
-              targetUrl='__blank'
-              useExternalLink
-            />
-            <Status>
-              {isDoneStatus(description ? description : '') ? "Concluído" : "Em Desenvolvimento"}
-            </Status>
-          </WrapperLinks>
-        }
+              onClick={() => window.open(`${repositoryUrl}`, "_blank")}
+            >
+              <span>{LABEL_LINK_SOURCE_CODE}</span>
+            </ButtonUrl>
+          }
+          <Status>
+            {isDoneStatus(description ? description : '') ? "Concluído" : "Em Desenvolvimento"}
+          </Status>
+        </Wrapper>
       </WrapperBottom>
     </Container>
   );
