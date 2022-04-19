@@ -4,4 +4,4 @@ export const PRINCIPAL_STACKS = "JavaScript, TypeScript, React, Styled Component
 
 export const SENCONDARY_STACKS = "Node, React Native";
 
-export const IN_STUDY = "Jest";
+export const IN_STUDY = "Jest, Redux";
