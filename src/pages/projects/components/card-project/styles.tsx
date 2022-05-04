@@ -31,7 +31,7 @@ export const Container = styled.div`
   :hover {
     transition: border 700ms, height 500ms;
     border: 1px solid ${({ theme }) => theme.colors.hover};
-    height: 600px;
+    height: 500px;
 
     .card-project__text-area {
       transition: max-height 600ms;
